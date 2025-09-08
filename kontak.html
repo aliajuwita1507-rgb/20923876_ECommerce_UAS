@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - Bouquet Floral Dream RV</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Font Awesome untuk ikon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <main>
+    <!-- Form Kontak -->
+    <section class="kontak">
+      <h2>Hubungi Kami</h2>
+      <p>Isi formulir berikut untuk pemesanan</p>
+
+      <form id="contactForm" novalidate>
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
+
+        <label for="pesan">Pesanan / Custom</label>
+        <textarea id="pesan" name="pesan" rows="6" placeholder="Tulis pesan Anda..." required></textarea>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-beli">Kirim</button>
+          <button type="reset" class="btn-kembali">Reset</button>
+        </div>
+
+        <p id="formMessage" class="form-message" aria-live="polite"></p>
+      </form>
+
+      <!-- Tombol Kembali -->
+      <div class="form-actions">
+        <a href="index.html" class="btn-kembali">⬅ Kembali ke Beranda</a>
+      </div>
+    </section>
+
+    <!-- Info Kontak -->
+    <section class="info-kontak">
+      <h3>Informasi Kontak</h3>
+      <p>Email: 
+        <a href="mailto:bouquetdream@example.com">bouquetdream@example.com</a>
+      </p>
+      <p>Telepon/WA: 
+        <a href="https://wa.me/6281234567890" target="_blank">+62 812-3456-7890</a>
+      </p>
+      <p>Alamat: Jl. Cimanjung Cicalengka, Kota Bandung</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Kontak: 0812-3456-7890 | aliajuwita1507@gmail.com</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/option.js"></script>
+</body>
+</html>

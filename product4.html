@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Produk - Bouquet Flowers</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Bouquet Floral Dream</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="product.html">Produk</a>
+      <a href="kontak.html">Kontak</a>
+      <a href="cart.html" class="cart-link">
+        <i class="fa fa-shopping-cart"></i>
+        <span id="cartCount">0</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- Detail Produk -->
+  <main>
+    <section class="detail-produk">
+
+      <!-- Slider -->
+      <div class="slider">
+        <div class="slides">
+          <img src="images/images4.jpeg" alt="Bouquet Flowers 1" class="active">
+          <img src="images/images4b.jpeg" alt="Bouquet Flowers 2">
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+        <div class="dots">
+          <span class="dot active" onclick="showSlide(0)"></span>
+          <span class="dot" onclick="showSlide(1)"></span>
+        </div>
+      </div>
+
+      <!-- Info produk -->
+      <div class="info-produk">
+        <h2>Bouquet Flowers</h2>
+        <p>rangkaian bunga buatan dengan tampilan menyerupai bunga asli, dirancang tahan lama tanpa perlu perawatan khusus.</p>
+        <p class="harga">Rp 80.000</p>
+        <ul class="fitur">
+          <li>Tidak layu dan bisa digunakan bertahun-tahun.</li>
+          <li>Investasi sekali beli bisa dinikmati dalam waktu lama.</li>
+          <li>Cocok untuk ruangan indoor/outdoor tanpa khawatir rusak.</li>
+          <li>Harga terjangkau kualitas premium</li>
+        </ul>
+
+        <!-- Pilihan warna bunga -->
+        <label>Pilih Warna Flowers:</label><br>
+        <div id="warnaFlowersGroup">
+          <button type="button" onclick="setFlowers('Putih')">Putih</button>
+          <button type="button" onclick="setFlowers('Coklat')">Coklat</button>
+          <button type="button" onclick="setFlowers('Pink')">Pink</button>
+          <button type="button" onclick="setFlowers('Biru')">Biru</button>
+        </div>
+
+        <p id="warnaFlowersTerpilih">
+          Warna Flowers: <span id="flowersVal">-</span>
+        </p>
+
+        <!-- Pilihan warna kertas -->
+        <label>Pilih Warna Kertas:</label><br>
+        <div id="warnaKertasGroup">
+          <button type="button" onclick="setWarnaKertas('Coklat')">Coklat</button>
+          <button type="button" onclick="setWarnaKertas('Putih')">Putih</button>
+          <button type="button" onclick="setWarnaKertas('Pink')">Pink</button>
+          <button type="button" onclick="setWarnaKertas('Biru')">Biru</button>
+        </div>
+        <p id="warnaKertasTerpilih">
+         Warna Kertas: <span id="warnaKertasVal">-</span>
+      </p>
+        <!-- Tombol beli dan tambah ke keranjang --> 
+        <button onclick="beliSekarang('Bouquet Flowers', 80000)">Beli Sekarang</button>
+        <button onclick="addFlowersToCart('Bouquet Flowers', 80000)">Tambah ke Keranjang</button>
+      </div>
+
+    </section>
+
+    <!-- Tombol kembali -->
+    <div class="kembali">
+      <a href="product.html#product" class="btn-kembali">← Kembali ke Produk</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Kontak: 0812-3456-7890 | aliajuwita1507@gmail.com</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="js/cart.js"></script>
+  <script src="js/option.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>

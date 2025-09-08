@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Produk - Bouquet Money</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Bouquet Floral Dream</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="product.html">Produk</a>
+      <a href="kontak.html">Kontak</a>
+      <a href="cart.html" class="cart-link">
+        <i class="fa fa-shopping-cart"></i>
+        <span id="cartCount">0</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- Detail Produk -->
+  <main>
+    <section class="detail-produk">
+
+      <!-- Slider -->
+      <div class="slider">
+        <div class="slides">
+          <img src="images/images5.jpeg" alt="Bouquet Money 1" class="active">
+          <img src="images/images5b.jpeg" alt="Bouquet Money 2">
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+        <div class="dots">
+          <span class="dot active" onclick="showSlide(0)"></span>
+          <span class="dot" onclick="showSlide(1)"></span>
+        </div>
+      </div>
+
+      <!-- Info produk -->
+      <div class="info-produk">
+        <h2>Kosongan Bouquet Money</h2>
+        <p>Buket uang cantik yang dapat disesuaikan dengan anggaran Anda.</p>
+        <p class="harga">Rp. 50.000</p>
+        <ul class="fitur">
+          <li>Lebih istimewa dibanding hadiah biasa.</li>
+          <li>Penerima bisa langsung menggunakan uangnya.</li>
+          <li>Hanya menyedikan Custom (Chat di Kontak kami).</li>
+          <li>Kami hanya menyediakan kosongan saja .</li>
+        </ul>
+
+        <!-- Tombol -->
+        <button onclick="beliSekarang('Custom Money',50000)">Beli Sekarang</button>
+        <button onclick="addToCart('Custom Money',50000)">Tambah ke Keranjang</button>
+      </div>
+    </section>
+
+    <!-- Tombol kembali -->
+    <div class="kembali">
+      <a href="product.html#product" class="btn-kembali">← Kembali ke Produk</a>
+    </div>
+  </main> 
+
+  <!-- Footer -->
+  <footer>
+    <p>Kontak: 0812-3456-7890 | aliajuwita1507@gmail.com</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="js/cart.js"></script>
+  <script src="js/option.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

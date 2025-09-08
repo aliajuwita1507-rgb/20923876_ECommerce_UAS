@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keranjang - Bouquet Floral Dream</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Bouquet Floral Dream</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="product.html">Produk</a>
+      <a href="cart.html" class="cart-link">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cartCount">0</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- Main Cart -->
+  <main>
+    <div class="cart-container">
+      <h2>Isi Keranjang</h2>
+      <ul id="cart-list"></ul>
+      <p id="total-harga">Total: Rp 0</p>
+      <button class="btn-clear" onclick="clearCart()">Kosongkan Keranjang</button>
+
+      <h3>Checkout</h3>
+      <form id="checkout-form">
+        <label for="metode">Metode Pembayaran:</label>
+        <select id="metode" required>
+          <option value="">--Pilih Metode--</option>
+          <option value="Transfer Bank">Transfer Bank</option>
+          <option value="E-Wallet">E-Wallet</option>
+          <option value="COD">Cash On Delivery (COD)</option>
+        </select>
+        <br><br>
+        <button type="kontak.html" class="btn-checkout">Checkout</button>
+      </form>
+      <p id="checkout-msg"></p>
+
+  <!-- Tombol Kembali -->
+  <div class="form-actions">
+    <a href="product.html" class="btn-kembali">⬅ Kembali</a>
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <p>Kontak: 0812-3456-7890 | aliajuwita1507@gmail.com</p>
+  </footer>
+
+  <!-- Script -->
+<script src="js/cart.js"></script>
+  <script src="js/option.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Produk - Bouquet Boneka</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Bouquet Floral Dream</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="product.html">Produk</a>
+      <a href="kontak.html">Kontak</a>
+      <a href="cart.html" class="cart-link">
+        <i class="fa fa-shopping-cart"></i>
+        <span id="cartCount">0</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- Detail Produk -->
+  <main>
+    <section class="detail-produk">
+
+      <!-- Slider -->
+      <div class="slider">
+        <div class="slides">
+          <img src="images/images2a.jpeg" alt="Bouquet Boneka 1" class="active">
+          <img src="images/images2b.jpeg" alt="Bouquet Boneka 2">
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+        <div class="dots">
+          <span class="dot active" onclick="showSlide(0)"></span>
+          <span class="dot" onclick="showSlide(1)"></span>
+        </div>
+      </div>
+
+      <!-- Info produk -->
+      <div class="info-produk">
+        <h2>Bouquet Boneka</h2>
+        <p>Gabungan bunga segar dan boneka lucu, sempurna untuk hadiah ulang tahun, anniversary, atau kejutan spesial. Bisa dikustom sesuai warna dan tema.</p>
+        <p class="harga">Rp 80.000</p>
+        <ul class="fitur">
+          <li>Boneka lembut berkualitas tinggi (ukuran mini)</li>
+          <li>Bisa dikustom sesuai warna atau tema</li>
+          <li>Desain elegan & bisa request</li>
+          <li>Harga terjangkau kualitas premium</li>
+        </ul>
+        <!-- Pilihan warna boneka -->
+        <label>Pilih Warna Boneka:</label><br>
+        <div id="warnaBonekaGroup">
+          <button type="button" onclick="setWarnaBoneka('Putih')">Putih</button>
+          <button type="button" onclick="setWarnaBoneka('Coklat')">Coklat</button>
+          <button type="button" onclick="setWarnaBoneka('Pink')">Pink</button>
+          <button type="button" onclick="setWarnaBoneka('Biru')">Biru</button>
+        </div>
+       <p id="warnaBonekaTerpilih">
+      Warna Boneka: <span id="warnaBonekaVal">-</span>
+    </p>
+        
+        <!-- Pilihan warna kertas -->
+        <label>Pilih Warna Kertas:</label><br>
+        <div id="warnaKertasGroup">
+          <button type="button" onclick="setWarnaKertas('Coklat')">Coklat</button>
+          <button type="button" onclick="setWarnaKertas('Putih')">Putih</button>
+          <button type="button" onclick="setWarnaKertas('Pink')">Pink</button>
+          <button type="button" onclick="setWarnaKertas('Biru')">Biru</button>
+        </div>
+        <p id="warnaKertasTerpilih">
+         Warna Kertas: <span id="warnaKertasVal">-</span>
+      </p>
+
+        <button onclick="beliSekarang('Bouquet Boneka', 80000)">Beli Sekarang</button>
+        <button onclick="addBonekaToCart('Bouquet Boneka', 80000)">Tambah ke Keranjang</button>
+      </div>
+
+    </section>
+
+    <!-- Tombol kembali -->
+    <div class="kembali">
+      <a href="product.html#product" class="btn-kembali">← Kembali ke Produk</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Kontak: 0812-3456-7890 | aliajuwita1507@gmail.com</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="js/cart.js"></script>
+  <script src="js/option.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
