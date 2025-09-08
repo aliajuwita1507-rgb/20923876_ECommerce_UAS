@@ -283,3 +283,19 @@ footer .contact-item i{color:#d2a679;font-size:1rem}
   .produk h2{font-size:1.3rem}
   .btn-beli,.btn-cart{font-size:0.8rem;padding:5px 10px}
 }
+/* Tombol responsif untuk HP */
+button, .btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    touch-action: manipulation; /* memastikan bisa disentuh di HP */
+}
+
+/* Jika ada elemen overlay yang menutupi tombol */
+.overlay {
+    z-index: 1; /* pastikan tombol punya z-index lebih tinggi */
+}
+
+.btn {
+    z-index: 10; /* tombol di atas overlay */
+    position: relative;
+}

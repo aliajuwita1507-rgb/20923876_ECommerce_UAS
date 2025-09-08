@@ -197,3 +197,11 @@ function beliMoneySekarang() {
   }
   beliSekarang("Bouquet Money", 50000, `Money: Kosongan, Kertas: ${warnaKertas}`);
 } 
+const tombol = document.querySelector('.add-cart');
+tombol.addEventListener('click', function() {
+    // tambahkan ke keranjang
+});
+
+tombol.addEventListener('touchstart', function() {
+    // tambahkan ke keranjang
+});
